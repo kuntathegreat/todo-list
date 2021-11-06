@@ -20,12 +20,12 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-dark bg-info">
         <div class="container">
             <div class="navbar-header">
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Real Programmer
+                    Todo
                 </a>
             </div>
 
