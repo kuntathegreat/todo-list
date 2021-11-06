@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="col-sm-offset-2 col-sm-8">
-            <div class="panel panel-default">
+            <div class="panel panel-info">
                 <div class="panel-heading">
                     New Task
                 </div>
@@ -17,10 +17,10 @@
                         {{ csrf_field() }}
 
                         @if (session()->has('message'))
-	<div class="bg-primary">
-		<p class="">
+	<div class="panel panel-success">
+		<div class="panel-heading">
 			{{ session()->get('message') }}
-		</p>
+		</div>
 	</div>
 @endif
 
@@ -37,7 +37,7 @@
                         <!-- Add Task Button -->
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-6">
-                                <button type="submit" class="btn btn-default">
+                                <button type="submit" class="btn btn-info">
                                     <i class="fa fa-btn fa-plus"></i>Add Task
                                 </button>
                             </div>
@@ -48,13 +48,13 @@
 
             <!-- Current Tasks -->
             @if (count($tasks) > 0)
-                <div class="panel panel-default">
+                <div class="panel panel-info">
                     <div class="panel-heading">
                         Current Tasks
                     </div>
 
                     <div class="panel-body">
-                        <table class="table table-striped task-table">
+                        <table class="table table-striped task-table bg-info">
                             <thead>
                                 <th>Task</th>
                                 <th>&nbsp;</th>
